@@ -26,7 +26,7 @@ public class WarpCommand extends CommandBase {
                 new CommandParameter("warp", CommandParamType.STRING, false)
         });
     }
-
+//oof
     public boolean execute(CommandSender sender, String label, String[] args) {
         if (!this.testPermission(sender)) {
             return false;
