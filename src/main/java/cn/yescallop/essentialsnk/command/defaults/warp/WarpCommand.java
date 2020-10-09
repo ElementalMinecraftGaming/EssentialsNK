@@ -16,7 +16,6 @@ public class WarpCommand extends CommandBase {
         super("warp", api);
         this.setAliases(new String[]{"warps"});
 
-        // command parameters
         commandParameters.clear();
         this.commandParameters.put("default", new CommandParameter[] {
                 new CommandParameter("warp", CommandParamType.STRING, true),
