@@ -30,7 +30,7 @@ public class WarpCommand extends CommandBase {
         if (!this.testPermission(sender)) {
             return false;
         }
-        if (!sender.hasPermission("essentialsnk.warp."args[0].toLowerCase())) {
+        if (!sender.hasPermission("essentialsnk.warp." + args[0].toLowerCase())) {
             sender.sendMessage(TextFormat.RED + Language.translate("Missing the perms of that warp"));
             return false;
         }
