@@ -10,7 +10,7 @@ import cn.yescallop.essentialsnk.EssentialsAPI;
 import cn.yescallop.essentialsnk.Language;
 import cn.yescallop.essentialsnk.command.CommandBase;
 
-public class WarpCommand extends CommandBase {
+public class WarpListCommand extends CommandBase {
 
     public WarpCommand(EssentialsAPI api) {
         super("warplist", api);
