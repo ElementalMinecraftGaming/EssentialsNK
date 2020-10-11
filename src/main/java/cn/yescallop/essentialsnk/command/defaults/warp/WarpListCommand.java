@@ -13,7 +13,7 @@ import cn.yescallop.essentialsnk.command.CommandBase;
 public class WarpListCommand extends CommandBase {
 
     @Override
-    public WarpListCommand() {
+    public WarpListCommand(EssentialsAPI api) {
         super("warp", api);
         setPermission("essentialsnk.warplist");
     }
