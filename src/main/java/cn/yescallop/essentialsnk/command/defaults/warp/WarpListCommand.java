@@ -12,7 +12,7 @@ import cn.yescallop.essentialsnk.command.CommandBase;
 
 public class WarpListCommand extends CommandBase {
 
-    public WarpListCommand() {
+    public WarpListCommand(EssentialsAPI api) {
         super("warplist", api);
         commandParameters.clear();
         this.commandParameters.put("default", new CommandParameter[] {
