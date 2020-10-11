@@ -17,7 +17,7 @@ public class WarpListCommand extends CommandBase {
         commandParameters.clear();
         this.commandParameters.put("default", new CommandParameter[] {
                 new CommandParameter("warplist", CommandParamType.STRING, true),
-        });
+        });;
     }
     public boolean execute(CommandSender sender, String label, String[] args) {
         if (!this.testPermission(sender)) {
@@ -38,5 +38,4 @@ public class WarpListCommand extends CommandBase {
         }
         return true;
     } 
-    return true;
 }
