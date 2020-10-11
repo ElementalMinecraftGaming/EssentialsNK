@@ -14,9 +14,10 @@ public class WarpListCommand extends CommandBase {
 
     public WarpListCommand(EssentialsAPI api) {
         super("warplist", api);
-         commandParameters.clear();
+         this.setAliases(new String[]{"warplist"});
+        commandParameters.clear();
         this.commandParameters.put("default", new CommandParameter[] {
-                new CommandParameter("warplist", CommandParamType.STRING, true),
+                new CommandParameter("warp", CommandParamType.TEXT, false)
         });
     }
     public boolean execute(CommandSender sender, String label, String[] args) {
