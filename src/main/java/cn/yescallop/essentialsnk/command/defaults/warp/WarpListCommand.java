@@ -39,6 +39,7 @@ public class WarpCommand extends CommandBase {
             sender.sendMessage(Language.translate("commands.warp.list") + "\n" + String.join(", ", list));
             return true;
         }
+        return true;
     } 
     return true;
 }
