@@ -10,7 +10,7 @@ import cn.yescallop.essentialsnk.EssentialsAPI;
 import cn.yescallop.essentialsnk.Language;
 import cn.yescallop.essentialsnk.command.CommandBase;
 
-public class WarpListCommand extends CommandBase {
+public class WarpCommand extends CommandBase {
 
     public WarpCommand(EssentialsAPI api) {
         super("warplist", api);
@@ -39,6 +39,6 @@ public class WarpListCommand extends CommandBase {
             sender.sendMessage(Language.translate("commands.warp.list") + "\n" + String.join(", ", list));
             return true;
         }
-        return true;
-    }
+    } 
+    return true
 }
