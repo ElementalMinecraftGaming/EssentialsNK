@@ -12,8 +12,8 @@ import cn.yescallop.essentialsnk.command.CommandBase;
 
 public class WarpListCommand extends CommandBase {
 
-    public WarpListCommand() {
-        super("warplist", "Missing essentialsnk.warplist", "/warplist");
+    public WarpListCommand(EssentialsAPI api) {
+        super("warplist", api);
         setPermission("essentialsnk.warplist");
     }
     public boolean execute(CommandSender sender, String label, String[] args) {
