@@ -12,12 +12,10 @@ import cn.yescallop.essentialsnk.command.CommandBase;
 
 public class WarpListCommand extends CommandBase {
 
-    @Override
     public WarpListCommand(EssentialsAPI api) {
         super("warp", api);
         setPermission("essentialsnk.warplist");
     }
-    @Override
     public boolean execute(CommandSender sender, String label, String[] args) {
         if (!sender.hasPermission("essentialsnk.warplist")) {
             sender.sendMessage(TextFormat.RED + Language.translate("Missing warp list perms"));
