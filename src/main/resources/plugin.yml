@@ -118,6 +118,8 @@ permissions:
     default: op
   essentialsnk.warp:
     default: true
+  essentialsnk.warplist:
+    default: true
   essentialsnk.warp.others:
     default: op
   essentialsnk.world:
