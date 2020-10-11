@@ -14,12 +14,12 @@ public class WarpListCommand extends CommandBase {
 
     public WarpCommand(EssentialsAPI api) {
         super("warplist", api);
-        return true;
     }
     public boolean execute(CommandSender sender, String label, String[] args) {
-        if (!this.testPermission(sender)) {
+        if (!sender.hasPermission("essentialsnk.warp")) {
+            sender.sendMessage(TextFormat.RED + Language.translate("Missing warp perms"));
             return false;
-        }
+        } 
         if (args.length > 0) {
             this.sendUsage(sender);
             return false;
