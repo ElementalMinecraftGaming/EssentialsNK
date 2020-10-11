@@ -13,8 +13,11 @@ import cn.yescallop.essentialsnk.command.CommandBase;
 public class WarpListCommand extends CommandBase {
 
     public WarpListCommand() {
-         super("warplist", warp list", "/warplist");
-        setPermission("essentialsnk.warplist");
+        super("warplist", api);
+        commandParameters.clear();
+        this.commandParameters.put("default", new CommandParameter[] {
+                new CommandParameter("warp", CommandParamType.STRING, true),
+        });
     }
     public boolean execute(CommandSender sender, String label, String[] args) {
         if (!sender.hasPermission("essentialsnk.warplist")) {
