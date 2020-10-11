@@ -41,5 +41,4 @@ public class WarpCommand extends CommandBase {
         }
         return true;
     } 
-    return true;
 }
