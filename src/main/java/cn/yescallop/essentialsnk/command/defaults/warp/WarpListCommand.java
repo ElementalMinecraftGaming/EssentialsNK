@@ -14,7 +14,6 @@ public class WarpListCommand extends CommandBase {
 
     public WarpCommand(EssentialsAPI api) {
         super("warplist", api);
-        commandParameters.clear();
     }
     public boolean execute(CommandSender sender, String label, String[] args) {
         if (!this.testPermission(sender)) {
@@ -34,5 +33,5 @@ public class WarpListCommand extends CommandBase {
             return true;
         }
         return true;
-    } 
+    }
 }
