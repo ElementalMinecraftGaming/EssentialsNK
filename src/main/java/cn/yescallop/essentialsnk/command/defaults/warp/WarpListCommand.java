@@ -14,7 +14,7 @@ public class WarpListCommand extends CommandBase {
 
     @Override
     public WarpListCommand() {
-        super("warplist", "List warps", "/warplist");
+        super("warp", api);
         setPermission("essentialsnk.warplist");
     }
     @Override
